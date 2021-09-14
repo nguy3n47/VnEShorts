@@ -1,2 +1,2 @@
 # VnEShorts
-Read short news updates in VnExpress
+A web application used to read short news updates in VnExpress
