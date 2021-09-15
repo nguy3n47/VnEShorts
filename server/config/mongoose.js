@@ -10,15 +10,15 @@ mongoose.connection.on('connected', () => {
 })
 
 mongoose.connection.on('reconnected', () => {
-  log('MongoDB reconnected')
+  console.log('MongoDB reconnected')
 })
 
 mongoose.connection.on('disconnected', () => {
-  log('MongoDB disconnected')
+  console.log('MongoDB disconnected')
 })
 
 mongoose.connection.on('close', () => {
-  log('MongoDB close')
+  console.log('MongoDB close')
 })
 
 mongoose.connection.on('error', (err) => {

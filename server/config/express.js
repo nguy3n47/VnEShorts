@@ -17,14 +17,10 @@ app.use('/api/v1', routes)
 app.use('*', (req, res) => res.status(404).json({ error: 'Not found' }))
 app.use((err, req, res, next) => {
   if (err.status && err.name) {
-    return res.status(err.status).send({
+    return res.status(err.status).json({
       message: err.message,
     })
   }
-  res.status(500).json({
-    message: 'Internal server error',
-    error: err.message,
-  })
   next()
 })
 
