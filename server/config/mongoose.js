@@ -29,7 +29,7 @@ mongoose.connection.on('error', (err) => {
 const db = {
   connect: async () => {
     try {
-      await mongoose.connect(process.env.DATABASE_URL, {
+      await mongoose.connect(process.env.MONGODB_URI, {
         useNewUrlParser: true,
       })
     } catch (err) {
