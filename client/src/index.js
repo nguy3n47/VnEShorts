@@ -1,10 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import { Windmill } from '@windmill/react-ui'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import customize from './styles/customize.js'
+import './styles/index.css'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Windmill theme={customize}>
     <App />
-  </React.StrictMode>,
+  </Windmill>,
   document.getElementById('root')
-);
+)

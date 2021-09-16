@@ -1,5 +1,5 @@
 {
-  "name": "vneshorts",
+  "name": "vneshorts-api",
   "version": "1.0.0",
   "description": "A web application used to read short news updates in VnExpress",
   "main": "index.js",
