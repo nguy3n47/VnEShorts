@@ -9,8 +9,8 @@ function Article({ article }) {
     return s && s[0].toUpperCase() + s.slice(1)
   }
   return (
-    <a href={article.link} target="_blank" rel="noreferrer">
-      <Card className="flex h-50 mt-10 mx-40 cursor-pointer">
+    <Card className="flex h-50 mt-10 mx-40 cursor-pointer">
+      <a className="flex" href={article.link} target="_blank" rel="noreferrer">
         <img className="object-cover w-1/3" src={article.image} alt="" />
         <CardBody>
           <p className="mb-4 font-bold text-xl hover:text-pink-800 text-black dark:text-gray-300">
@@ -23,8 +23,8 @@ function Article({ article }) {
             {capitalize(moment(article.date).format('LLLL')) + ' (GMT+7)'}
           </p>
         </CardBody>
-      </Card>
-    </a>
+      </a>
+    </Card>
   )
 }
 
