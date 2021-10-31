@@ -37,7 +37,7 @@ function App() {
   return (
     <React.Fragment>
       <Header onChangeCategory={onChangeCategory} />
-      <div className="container mt-20">
+      <div className="mt-20">
         <InfiniteScroll
           dataLength={news.length}
           next={() => setPage((page) => page + 1)}
